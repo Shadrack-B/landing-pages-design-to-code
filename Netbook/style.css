@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #495057;
+}
+
+header {
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 1),
+        rgba(212, 231, 254, 1)
+    );
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
+}
+
+a:link {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+}
+
+.logo img {
+    width: 34px;
+    height: 34px;
+    font-size: 24;
+}
+
+.logo span {
+    align-self: center;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2vw;
+}
+
+.nav-item:first-child {
+    font-weight: 600;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    border: none;
+    background: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    font-size: 12px;
+}
+
+hr {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.community {
+    display: inline-block;
+    background-color: rgba(33, 123, 244, 0.2);
+    font-size: 12px;
+}
+
+.hero a,
+.hero h1,
+.hero p {
+    margin-bottom: 24px;
+}
+.cta {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    border: none;
+    background-color: rgba(33, 123, 244, 1);
+    color: #fff;
+    box-shadow: 1px 1px 2px #868e96;
+}
+
+.invite {
+    border: 1px solid rgba(33, 123, 244, 1);
+    color: rgba(33, 123, 244, 1);
+}
+
+.hero img {
+    width: 50%;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
