@@ -91,7 +91,7 @@ hr {
     margin: 0 auto;
 }
 
-.hero {
+.flex-2 {
     display: flex;
     align-items: center;
 }
@@ -136,4 +136,35 @@ hr {
 h1 {
     font-size: 56px;
     font-weight: 700;
+}
+
+.about-us img,
+.blog img {
+    border-radius: 5%;
+}
+
+/* ------------About Us Section------------ */
+
+.about-us {
+    gap: 13.889vw;
+    margin: 130px;
+}
+
+.about-us .right-col {
+    gap: 29px;
+}
+
+.about-img-group {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-img-1 {
+    width: 18.75vw;
+    height: calc(18.75vw * 1.36);
+}
+
+.about-img-group img {
+    width: 18.4vw;
+    height: calc(18.4vw * 0.9);
 }
