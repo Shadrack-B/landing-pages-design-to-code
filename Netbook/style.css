@@ -143,6 +143,18 @@ h1 {
     border-radius: 5%;
 }
 
+.right-arrow {
+    width: 15px;
+    height: 15px;
+    transform: translateY(2px);
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* ------------About Us Section------------ */
 
 .about-us {
@@ -167,4 +179,65 @@ h1 {
 .about-img-group img {
     width: 18.4vw;
     height: calc(18.4vw * 0.9);
+}
+
+/* ------------Achievement Section------------ */
+.achievement-elements {
+    gap: 20px;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(185, 185, 185, 0.44);
+    border-radius: 5px;
+    padding: 44px 40px;
+}
+
+.members {
+    transform: translateX(-17px);
+}
+
+.star-icon {
+    width: 28px;
+    height: 28px;
+    stroke: rgba(33, 123, 244, 1);
+}
+
+.achievement-display {
+    display: flex;
+    align-items: center;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discover .right-arrow {
+    stroke: #fff;
+    fill: #fff;
+}
+
+/* ------------Features Section------------ */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heading {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 420px;
+    text-align: center;
+}
+
+.card-2 {
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 44px 40px;
 }
