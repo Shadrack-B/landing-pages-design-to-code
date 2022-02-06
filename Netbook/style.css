@@ -26,6 +26,11 @@ a:link {
     text-decoration: none;
 }
 
+section {
+    bottom-margin: 46px;
+    padding: 64px 0;
+}
+
 .logo {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -155,11 +160,16 @@ h1 {
     gap: 5px;
 }
 
+.heading {
+    width: 420px;
+    text-align: center;
+    align-items: center;
+}
+
 /* ------------About Us Section------------ */
 
 .about-us {
     gap: 13.889vw;
-    margin: 130px;
 }
 
 .about-us .right-col {
@@ -228,11 +238,9 @@ h1 {
     grid-template-columns: 1fr 1fr;
 }
 
-.heading {
+.features .heading {
     grid-column: 1/-1;
     justify-self: center;
-    width: 420px;
-    text-align: center;
 }
 
 .card-2 {
@@ -240,4 +248,80 @@ h1 {
     gap: 20px;
     border-radius: 5px;
     padding: 44px 40px;
+}
+
+/* ------------Team Section------------ */
+
+.team-items {
+    flex-direction: column;
+    gap: 44px;
+}
+
+.team-cards {
+    gap: 28px;
+}
+
+.tab-links {
+    background-color: rgba(242, 247, 254, 1);
+    padding: 28px 16px;
+    border-radius: 15px;
+}
+
+/* ------------CTA Section------------ */
+
+.cta {
+    background-color: rgba(228, 239, 252, 1);
+}
+
+.mobile-muckup {
+    width: 440.5px;
+    height: 518px;
+}
+.apple-icon,
+.play-store-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.cta-links {
+    display: flex;
+    gap: 28px;
+    margin-top: 28px;
+}
+
+.apple-link,
+.play-store-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apple-link {
+    background-color: #fff;
+}
+
+.play-store-link {
+    background-color: rgba(41, 40, 78, 1);
+}
+
+.play-store-link p,
+.apple-link p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(174, 179, 196, 1);
+}
+.apple-link span {
+    font-size: 18px;
+    color: rgba(74, 78, 85, 1);
+    font-weight: 600;
+}
+
+.play-store-link span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cta-items {
+    gap: 13.889vw;
 }
