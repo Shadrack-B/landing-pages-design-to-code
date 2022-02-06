@@ -12,6 +12,7 @@ header {
         rgba(255, 255, 255, 1),
         rgba(212, 231, 254, 1)
     );
+    margin-bottom: 46px;
 }
 
 nav {
@@ -21,13 +22,24 @@ nav {
     padding: 26px 0;
 }
 
+.dropdown-icon {
+    width: 14px;
+    height: 14px;
+    transform: translateY(4px);
+}
+
 a:link {
     font-size: 14px;
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: red;
+}
+
+.heading a:link {
+    color: red;
 }
 
 section {
-    bottom-margin: 46px;
+    margin-bottom: 46px;
     padding: 64px 0;
 }
 
@@ -360,4 +372,38 @@ h1 {
 }
 .footer-items p {
     color: #fff;
+}
+
+/* ------------footer------------ */
+footer {
+    background-color: rgba(32, 32, 45, 1);
+}
+
+.footer-foot {
+    padding: 28px 0;
+    justify-content: space-between;
+}
+
+.footer-foot span,
+.footer-foot a:link {
+    color: #fff;
+}
+
+.footer-socials {
+    gap: 12px;
+}
+
+.footer-socials img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
 }
