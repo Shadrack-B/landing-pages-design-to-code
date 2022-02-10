@@ -28,14 +28,17 @@ nav {
     transform: translateY(4px);
 }
 
+.cl-blue {
+    color: rgba(33, 123, 244, 1);
+}
+
 a:link {
     font-size: 14px;
-    /* text-decoration: none; */
-    color: red;
+    text-decoration: none;
 }
 
 .heading a:link {
-    color: red;
+    color: rgba(33, 123, 244, 1);
 }
 
 section {
@@ -122,6 +125,7 @@ hr {
 .community {
     display: inline-block;
     background-color: rgba(33, 123, 244, 0.2);
+    color: rgba(33, 123, 244, 1);
     font-size: 12px;
 }
 
@@ -244,6 +248,10 @@ h1 {
     gap: 20px;
 }
 
+.discover .btn {
+    display: inline;
+}
+
 .discover .right-arrow {
     stroke: #fff;
     fill: #fff;
@@ -251,9 +259,14 @@ h1 {
 
 /* ------------Features Section------------ */
 
+.features {
+    background-image: linear-gradient(#fff, rgb(220, 233, 252), #fff);
+}
+
 .feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 44px;
 }
 
 .features .heading {
@@ -264,8 +277,17 @@ h1 {
 .card-2 {
     display: flex;
     gap: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 44px 40px;
+    background-color: #fff;
+}
+
+.card-2 h2 {
+    margin-bottom: 20px;
+}
+
+.card-2 img {
+    transform: translateY(-12px);
 }
 
 /* ------------Team Section------------ */
@@ -276,13 +298,50 @@ h1 {
 }
 
 .team-cards {
-    gap: 28px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.team-card {
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    padding: 36px;
+    align-items: center;
+}
+.card-text p {
+    text-align: center;
 }
 
 .tab-links {
     background-color: rgba(242, 247, 254, 1);
     padding: 28px 16px;
     border-radius: 15px;
+}
+
+.card-img {
+    position: relative;
+    border-radius: 50%;
+    background: repeating-linear-gradient(
+            rgba(255, 175, 46, 1),
+            rgba(255, 175, 46, 1) 10%,
+            #fff 10%,
+            #fff 20%
+        ),
+        linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1));
+}
+
+.img {
+    margin: 4px;
+    padding: 12px;
+    background-image: radial-gradient(rgba(222, 234, 252, 1) 60%, #fff 40%);
+    border-radius: 50%;
+}
+
+.check-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -4px);
 }
 
 /* ------------CTA Section------------ */
@@ -293,7 +352,8 @@ h1 {
 
 .mobile-muckup {
     width: 440.5px;
-    height: 518px;
+    height: 413px;
+    transform: translateY(67px);
 }
 .apple-icon,
 .play-store-icon {
@@ -345,6 +405,23 @@ h1 {
 }
 
 /* ------------Blog Section------------ */
+.indent {
+    background-color: rgba(255, 175, 46, 1);
+    width: 40px;
+    height: 2px;
+    align-self: flex-start;
+    transform: translateY(12px);
+}
+
+.blog-text {
+    gap: 12px;
+}
+
+.blog-text div {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
 
 .blog-flex {
     flex-direction: column;
@@ -356,8 +433,7 @@ h1 {
 }
 
 .blog img {
-    width: 300px;
-    height: 290px;
+    width: 100%;
 }
 
 /* ------------footer Section------------ */
