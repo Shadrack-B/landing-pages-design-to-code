@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: #495057;
+    transition: 0.5s;
 }
 
 header {
@@ -188,6 +189,30 @@ h1 {
     align-items: center;
 }
 
+.lift:hover {
+    transform: scale(1.03, 1.03);
+    box-shadow: 8px 4px 36px 0.5px #adb5bd;
+    border: none;
+}
+
+.lift:hover .see-more {
+    color: rgba(33, 123, 244, 1);
+}
+
+.btn:hover {
+    transform: scale(1.03, 1.03);
+    box-shadow: 8px 4px 36px 0.5px #adb5bd;
+}
+
+.see-more:hover {
+    color: rgba(33, 123, 244, 1);
+}
+
+.see-more:hover .right-arrow {
+    stroke: rgba(33, 123, 244, 1);
+    fill: #217bf4;
+}
+
 /* ------------About Us Section------------ */
 
 .about-us {
@@ -206,11 +231,28 @@ h1 {
 .about-img-1 {
     width: 18.75vw;
     height: calc(18.75vw * 1.36);
+    opacity: 0.5;
 }
 
 .about-img-group img {
     width: 18.4vw;
     height: calc(18.4vw * 0.9);
+    opacity: 0.5;
+}
+
+.about-us-image {
+    border-radius: 5%;
+    background-color: rgba(43, 43, 57, 1);
+    position: relative;
+    cursor: pointer;
+}
+
+.about-us-image::after {
+    content: url('static/img/about-us-imgs/play-icon.svg');
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ------------Achievement Section------------ */
@@ -303,7 +345,7 @@ h1 {
 }
 
 .team-card {
-    border: 1px solid #ced4da;
+    border: 1px solid #e9ecef;
     border-radius: 15px;
     padding: 36px;
     align-items: center;
@@ -438,6 +480,7 @@ h1 {
 
 /* ------------footer Section------------ */
 .footer {
+    margin: 0;
     background-color: rgba(43, 43, 57, 1);
 }
 
@@ -448,6 +491,26 @@ h1 {
 }
 .footer-items p {
     color: #fff;
+}
+
+.footer-items input {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    width: 100%;
+}
+
+.subscribe {
+    position: relative;
+}
+
+.subscribe-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 26px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* ------------footer------------ */
