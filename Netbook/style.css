@@ -21,6 +21,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 26px 0;
+    white-space: nowrap;
+    gap: 2em;
 }
 
 .dropdown-icon {
@@ -143,6 +145,7 @@ hr {
 .btn {
     padding: 16px 32px;
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -213,13 +216,18 @@ h1 {
     fill: #217bf4;
 }
 
+.right-col {
+    gap: 2em;
+    width: 50%;
+}
+
 /* ------------About Us Section------------ */
 
 .about-us {
     gap: 13.889vw;
 }
 
-.about-us .right-col {
+.about-us {
     gap: 29px;
 }
 
