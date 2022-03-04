@@ -74,13 +74,18 @@ a {
     font-weight: 500;
 }
 
-.nav-items a:link,
-.nav-items a:visited {
+.nav-item:link,
+.nav-item:visited {
     font-weight: 500;
 }
 
-.nav-items a:hover,
-.nav-items a:active {
+.nav-item:hover,
+.nav-item:active {
+    color: rgba(26, 26, 26, 1);
+    font-weight: 600;
+}
+
+.nav-item.current-page {
     color: rgba(26, 26, 26, 1);
     font-weight: 600;
 }
@@ -302,6 +307,11 @@ nav .search {
     white-space: nowrap;
 }
 
+@media (max-width: 700px) {
+    .achievements .container {
+        flex-direction: column;
+    }
+}
 /* ------------------------------------ Features Section ------------------------------------ */
 .features {
     background-image: linear-gradient(
@@ -324,6 +334,18 @@ nav .search {
     padding: 1.5em;
     border-radius: 1em;
     align-items: flex-start;
+    max-width: 500px;
+}
+
+.features-item-icon {
+    width: 40%;
+    max-width: 106px;
+}
+
+@media (max-width: 800px) {
+    .features-items {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ------------------------------------ Team Section ------------------------------------ */
@@ -394,6 +416,10 @@ nav .search {
     color: rgba(57, 62, 69, 1);
 }
 
+.cta-left-col .row {
+    width: 100%;
+}
+
 .cta-applestore p:first-child {
     color: rgba(143, 149, 166, 1);
 }
@@ -433,8 +459,22 @@ nav .search {
     width: 4em;
     height: 0.125em;
     background-color: rgba(255, 175, 46, 1);
-    align-self: flex-start;
-    transform: translateY(1em);
+    align-self: center;
+    transform: translateY(-3em);
+}
+
+@media (max-width: 650px) {
+    .blog-items {
+        flex-direction: column;
+    }
+
+    .blog-item {
+        flex-direction: row;
+    }
+
+    .blog-item-image {
+        width: 40%;
+    }
 }
 
 /* ------------------------------------ footer Section ------------------------------------ */
@@ -455,6 +495,7 @@ nav .search {
     border: 0.0625em solid rgba(223, 223, 225, 1);
     border-radius: 0.7em;
     position: relative;
+    white-space: nowrap;
 }
 
 .subscribe input {
@@ -462,6 +503,10 @@ nav .search {
     border-radius: 0.7em;
     border: none;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.subscribe input:focus {
+    outline: none;
 }
 
 .btn-subscribe {
