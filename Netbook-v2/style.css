@@ -247,9 +247,6 @@ nav .search {
         flex-direction: column;
     }
 
-    .hero-right-col {
-        /* order: -1; */
-    }
     .hero-left-col,
     .hero-right-col {
         width: 100%;
